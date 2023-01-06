@@ -1,0 +1,13 @@
+#login:hover{
+
+    -fx-background-color: gray;
+     -fx-border-color: white;
+    -fx-border-width: 3;
+
+}
+#login{
+
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-font: 25;
+}

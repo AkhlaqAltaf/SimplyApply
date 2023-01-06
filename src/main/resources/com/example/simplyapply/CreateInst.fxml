@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="466.0" prefWidth="656.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simplyapply.CreateInstitute">
+   <children>
+      <Pane layoutX="-6.0" prefHeight="567.0" prefWidth="677.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane layoutX="25.0" layoutY="70.0" prefHeight="44.0" prefWidth="266.0">
+               <children>
+                  <Label fx:id="boardIDL" layoutX="8.0" layoutY="16.0" styleClass="instLabel" text="Board ID:" />
+                  <TextField fx:id="boardID" layoutX="79.0" layoutY="15.0" onKeyTyped="#boardIDType" prefHeight="30.0" prefWidth="180.0" styleClass="instField" />
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Pane>
+            <Pane layoutX="383.0" layoutY="70.0" prefHeight="44.0" prefWidth="266.0">
+               <children>
+                  <Label fx:id="instNameL" layoutX="8.0" layoutY="16.0" styleClass="instLabel" text="Name:" />
+                  <TextField fx:id="instName" layoutX="84.0" layoutY="9.0" prefHeight="30.0" prefWidth="180.0" styleClass="instField" />
+               </children>
+            </Pane>
+            <Label layoutX="171.0" style="-fx-background-color: #40b4bc;" text="Institute Information">
+               <font>
+                  <Font name="Cinzel Black" size="32.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.4069400510577373" endY="0.29022089239174637">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Pane layoutX="25.0" layoutY="114.0" prefHeight="44.0" prefWidth="266.0">
+               <children>
+                  <Label fx:id="categoryL" layoutX="6.0" layoutY="21.0" styleClass="instLabel" text="Category" />
+                  <ComboBox fx:id="category" layoutX="80.0" layoutY="18.0" prefHeight="30.0" prefWidth="180.0">
+                     <items>
+                        <FXCollections fx:factory="observableArrayList">
+                           <String fx:value="School" />
+                           <String fx:value="College" />
+                           <String fx:value="University" />
+                           <String fx:value="Academy" />
+                        </FXCollections>
+                     </items>
+
+                  </ComboBox>
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Pane>
+            <Pane fx:id="boardP" layoutX="383.0" layoutY="114.0" prefHeight="44.0" prefWidth="266.0">
+               <children>
+                  <Label fx:id="boardL" layoutX="8.0" layoutY="16.0" prefHeight="17.0" prefWidth="48.0" styleClass="instLabel" text="Board" />
+                  <TextField fx:id="board" layoutX="84.0" layoutY="11.0" prefHeight="30.0" prefWidth="180.0" styleClass="instField" />
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Pane>
+            <Pane layoutX="25.0" layoutY="158.0" prefHeight="44.0" prefWidth="266.0">
+               <children>
+                  <Label fx:id="imagePath1L" layoutX="-7.0" layoutY="16.0" prefHeight="18.0" prefWidth="92.0" styleClass="instLabel" text="Institute Image" />
+                  <TextField fx:id="imagePath1" layoutX="79.0" layoutY="10.0" prefHeight="30.0" prefWidth="180.0" styleClass="instField" />
+                  <Button fx:id="image1btn" layoutX="199.0" layoutY="10.0" mnemonicParsing="false" onAction="#image1Chooser" style="-fx-background-color: #40b4bc;" text="Choose" />
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Pane>
+            <Pane layoutX="383.0" layoutY="158.0" prefHeight="44.0" prefWidth="266.0">
+               <children>
+                  <Label fx:id="imagePath2L" layoutX="9.0" layoutY="16.0" styleClass="instLabel" text="Owner Image" />
+                  <TextField fx:id="imagePath2" layoutX="84.0" layoutY="11.0" prefHeight="30.0" prefWidth="180.0" styleClass="instField" />
+                  <Button fx:id="image2btn" layoutX="206.0" layoutY="7.0" mnemonicParsing="false" onAction="#image2Chooser" style="-fx-background-color: #40b4bc;" text="Choose" />
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Pane>
+            <Pane layoutX="25.0" layoutY="362.0" prefHeight="44.0" prefWidth="266.0">
+               <children>
+                  <Label fx:id="ownerNameL" layoutX="8.0" layoutY="16.0" styleClass="instLabel" text="Name:" />
+                  <TextField fx:id="ownerName" layoutX="84.0" layoutY="11.0" prefHeight="30.0" prefWidth="180.0" styleClass="instField" />
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Pane>
+            <Pane layoutX="383.0" layoutY="362.0" prefHeight="44.0" prefWidth="266.0">
+               <children>
+                  <Label fx:id="cnicL" layoutX="8.0" layoutY="16.0" styleClass="instLabel" text="CNIC:" />
+                  <TextField fx:id="cnic" layoutX="84.0" layoutY="11.0" onKeyTyped="#cnicType" prefHeight="30.0" prefWidth="180.0" styleClass="instField" />
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Pane>
+            <Pane layoutX="25.0" layoutY="406.0" prefHeight="44.0" prefWidth="266.0">
+               <children>
+                  <Label layoutX="8.0" layoutY="16.0" styleClass="instLabel" text="Age" />
+                  <TextField fx:id="age" layoutX="84.0" layoutY="11.0" onKeyTyped="#ageType" prefHeight="30.0" prefWidth="180.0" styleClass="instField" />
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Pane>
+            <Pane layoutX="383.0" layoutY="406.0" prefHeight="44.0" prefWidth="266.0">
+               <children>
+                  <Label layoutX="8.0" layoutY="16.0" styleClass="instLabel" text="Education" />
+                  <TextField fx:id="education" layoutX="84.0" layoutY="11.0" prefHeight="30.0" prefWidth="180.0" styleClass="instField" />
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Pane>
+            <Label layoutX="202.0" layoutY="315.0" style="-fx-background-color: #40b4bc;" text="Owner Information">
+               <font>
+                  <Font name="Cinzel Black" size="32.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.38170348206529103" endY="0.4794953042400372">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Pane layoutX="161.0" layoutY="503.0" prefHeight="51.0" prefWidth="395.0" styleClass="formButtonPane">
+               <children>
+                  <Button fx:id="reset" layoutX="31.0" layoutY="21.0" mnemonicParsing="false" onAction="#resertClick" prefHeight="30.0" prefWidth="67.0" style="-fx-background-color: #40b4bc;" styleClass="formButton" text="Reset" />
+                  <Button fx:id="cancel" layoutX="153.0" layoutY="21.0" mnemonicParsing="false" onAction="#cancelClick" prefHeight="30.0" prefWidth="67.0" style="-fx-background-color: #40b4bc;" styleClass="formButton" text="Cancel" />
+                  <Button fx:id="save" layoutX="266.0" layoutY="21.0" mnemonicParsing="false" onAction="#saveClick" prefHeight="30.0" prefWidth="67.0" style="-fx-background-color: #40b4bc;" styleClass="formButton" text="Save" />
+               </children>
+            </Pane>
+            <Pane fx:id="resultP" layoutX="25.0" layoutY="202.0" prefHeight="44.0" prefWidth="266.0">
+               <children>
+                  <Label layoutX="9.0" layoutY="16.0" styleClass="instLabel" text="Past Result" />
+                  <TextField fx:id="result" layoutX="84.0" layoutY="11.0" onKeyTyped="#resultType" prefHeight="30.0" prefWidth="180.0" styleClass="instField" />
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Pane>
+            <Pane fx:id="descriptionP" layoutX="383.0" layoutY="202.0" prefHeight="44.0" prefWidth="266.0">
+               <children>
+                  <Label layoutX="9.0" layoutY="16.0" styleClass="instLabel" text="Description" />
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Pane>
+            <TextArea fx:id="description" layoutX="463.0" layoutY="206.0" prefHeight="51.0" prefWidth="200.0" style="-fx-wrap-text: true;" />
+            <Pane layoutX="25.0" layoutY="450.0" prefHeight="44.0" prefWidth="266.0">
+               <children>
+                  <Label layoutX="8.0" layoutY="16.0" styleClass="instLabel" text="Email" />
+                  <TextField fx:id="email" layoutX="84.0" layoutY="11.0" prefHeight="30.0" prefWidth="180.0" styleClass="instField" />
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Pane>
+            <Pane layoutX="383.0" layoutY="450.0" prefHeight="44.0" prefWidth="266.0">
+               <children>
+                  <Label layoutX="8.0" layoutY="16.0" styleClass="instLabel" text="Phone" />
+                  <TextField fx:id="phone" layoutX="84.0" layoutY="11.0" onKeyTyped="#phoneType" prefHeight="30.0" prefWidth="180.0" styleClass="instField" />
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Pane>
+            <Pane fx:id="resultP1" layoutX="25.0" layoutY="240.0" prefHeight="44.0" prefWidth="266.0">
+               <children>
+                  <Label layoutX="9.0" layoutY="16.0" styleClass="instLabel" text="Address" />
+                  <TextField fx:id="address" layoutX="84.0" layoutY="11.0" prefHeight="30.0" prefWidth="180.0" styleClass="instField" />
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Pane>
+            <Label fx:id="error" layoutX="14.0" layoutY="41.0" prefHeight="44.0" prefWidth="663.0" style="-fx-background-color: null;" textFill="#e20909">
+               <font>
+                  <Font name="Arial Black" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

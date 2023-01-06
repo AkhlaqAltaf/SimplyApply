@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@CSS/CRUDS.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simplyapply.AdminControler">
+   <children>
+      <Pane layoutX="72.0" layoutY="43.0" prefHeight="404.0" prefWidth="600.0">
+         <children>
+            <Button  fx:id="create" layoutX="173.0" layoutY="14.0" mnemonicParsing="false" onAction="#createClick" prefHeight="50.0" prefWidth="157.0" text="Create" />
+            <Button fx:id="read" layoutX="176.0" layoutY="98.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="157.0" text="Read" />
+            <Button fx:id="update" layoutX="176.0" layoutY="179.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="157.0" text="Update" />
+            <Button fx:id="delete" layoutX="176.0" layoutY="258.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="157.0" text="Delete" />
+            <Button onAction="#searchClick" fx:id="search" layoutX="176.0" layoutY="331.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="157.0" text="Search" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

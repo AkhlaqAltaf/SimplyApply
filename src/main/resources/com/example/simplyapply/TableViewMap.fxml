@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="506.0" prefWidth="703.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simplyapply.PandingRequest">
+   <children>
+      <TableView fx:id="table" prefHeight="574.0" prefWidth="750.0">
+        <columns>
+          <TableColumn fx:id="instituteID" prefWidth="121.33333826065063" text="Institute ID" />
+          <TableColumn fx:id="instituteName" prefWidth="160.00001525878906" text="Institute Name" />
+            <TableColumn fx:id="board" prefWidth="107.33331298828125" text="Board" />
+            <TableColumn fx:id="ownerName" prefWidth="113.3333740234375" text="Owner" />
+            <TableColumn fx:id="ownerID" prefWidth="147.33331298828125" text="Owner ID" />
+            <TableColumn fx:id="action" prefWidth="96.6666259765625" text="Action" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

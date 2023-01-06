@@ -1,0 +1,36 @@
+#create{
+
+
+    -fx-background-color: green;
+    -fx-font-size: 20;
+}
+
+#read{
+
+
+    -fx-background-color: #acdbf1;
+    -fx-font-size: 20;
+}
+
+#update{
+
+
+    -fx-background-color: #52b1e3;
+    -fx-font-size: 20;
+
+}
+
+#delete{
+
+
+    -fx-background-color: red;
+    -fx-font-size: 20;
+}
+
+#search{
+
+
+    -fx-background-color: white;
+    -fx-font-size: 20;
+}
+
